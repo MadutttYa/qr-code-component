@@ -27,10 +27,17 @@ body{
     background-color: hsl(0, 0%, 100%);
     padding: 1.25rem;
     border-radius: 0.625rem;
+    max-width: 350px;
+    box-shadow: 0px 1px 20px rgba(128, 128, 128, 0.356);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card img{
-    max-width: 100%;
+    width: 300px;
+    height: 300px;
     margin-bottom: 30px;
     border-radius: 0.625rem;
 }
@@ -41,44 +48,19 @@ body{
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin: 10px 0 0 10px;
+    margin-bottom: 1rem;
 }
 
 .desc-title{
     color: hsl(218, 44%, 22%);
     margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .desc-para{
     color: hsl(220, 15%, 55%);
-}
-
-@media (min-width: 375px){
-    .container{
-        width: 300px;
-    }
-    .desc-title {
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-    .desc-para{
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 280px){
-    .container{
-        width: 200px;
-    }
-
-    .card img{
-        margin-bottom: 10px;
-    }
-
-    .desc-title{
-        font-size: 20px;
-    }
+    font-size: 15px;
 }
 
 
